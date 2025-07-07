@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="photo.jpg">
+  <link rel="stylesheet" href="style.css">
   <title>CSS Project</title>
  
   <link
@@ -16,125 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 </head>
-<style>
-  *{
-    margin: 0px;
-    padding: 0px;
-     font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-.main_box{
-    background-image: url(photo.jpg);
-background-size: cover;
 
-height: 100vh;
-}
-.btn_one i{
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-    position: absolute;
-    left: 16px;
-    line-height: 60px;
-    cursor: pointer;
-    transition:all  0.3s linear;
-  
-   
-}
-.sidebar_menu{
-    position: fixed;
-    left: -300px;
-   height: 100vh;
-   width: 300px;
-  background-color: rgb(255, 255, 255,0.1); 
-  box-shadow: 0 0 6px rgb(255, 255, 255,0.5);
-  transition: all 0.3s linear;
-
-
-}
-.logo{
-    position: absolute;
-    width: 100%;
-    line-height: 60px;
-     box-shadow: 0 0 4px rgb(255, 255, 255,0.5);
-}
-.logo a{
-    position: relative;
-    left: 50px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-}
-.sidebar_menu .btn_two i{
-     color:gray;
-    font-size: 25px;
-    font-weight: 700;
-    position: absolute;
-    left: 275px;
-    cursor: pointer;
-    transition:all  0.3s linear;
-   
- 
-
-
-}
-.sidebar_menu .menu{
-color: white;
-position:absolute ;
-width: 100%;
-top: 80px;
-
-}
-.sidebar_menu .menu li{
-    margin-top: 6px;
-    padding: 14px 20px;
-}
-.sidebar_menu .menu li,a{
-   color: white; 
-   text-decoration: none;
-   font-size: 20px;
-}
-.sidebar_menu .menu i{
-    padding-right: 8px;
-}
-.sidebar_menu .social_media{
-color: white;
-opacity: 0.5;
-position: absolute;
-left: 25%;
-bottom: 50px;
-}
-.sidebar_menu .social_media i{
-    color: white;
-opacity: 0.5;
-padding: 0.5px;
-}
-#check{
-  display: none;
-}
-.sidebar_menu .menu li:hover{
-    box-shadow: 0 0 4px rgb(255, 255, 255,0.5);;
-}
-.btn_one i:hover{
-    font-size: 40px;
-}
-.btn_two i:hover{
-font-size: 30px;
-}
-.sidebar_menu .social_media i:hover{
-    opacity: 5;
-    transform: scale(1.1);
-}
-#check:checked ~ .sidebar_menu{
-left: 0;
-}
-#check:checked ~ .btn_one i{
-    opacity: 0;
-}
-</style>
 <body>
   <div class="main_box">
     <input type="checkbox" id="check" />
